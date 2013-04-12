@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe MooMoo::Nameserver do
+  it { should have_registered_service(:advanced_update_nameservers, :nameserver) }
   it { should have_registered_service(:create, :nameserver) }
   it { should have_registered_service(:delete, :nameserver) }
   it { should have_registered_service(:get, :nameserver) }
